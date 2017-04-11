@@ -1,0 +1,23 @@
+{
+  "name": "massdrop",
+  "version": "1.0.0",
+  "description": "coding challenge for massdrop",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/npm/npm.git"
+  },
+  "author": "Anton Oyung",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongojs": "^2.4.0",
+    "mongoose": "^4.9.4",
+    "morgan": "^1.8.1",
+    "queue": "^4.2.1"
+  }
+}
