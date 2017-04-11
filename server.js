@@ -51,8 +51,9 @@ var CompleteJob = function(job) {
 
 // Get HTML and pop from Queue
 var fetch = function(url, id) {
-  job = queue.pop(id)
+  job = queue.pop(id);
   console.log("Job " + id + " is removed.");
+  console.log("Job " + id + " data: " + job.data.output);
 }
 
 // Add job to Queue
@@ -99,8 +100,6 @@ router.route('/jobs/:url')
     console.log("Your request has been added.");
   });
   app.use('/MassDrop', router);
-
-
 
 //Pop item from queue and view results like 'localhost:8080/jobs/view'
 router.route('/jobs/view')
